@@ -1,8 +1,11 @@
 # SSLCheck_SAP
 
-## Requirements
+### Requirements
 
 `pip install -r requirements.txt`
+
+
+### Using arguments
 
 `-L --local` Flag to enable local server check
 
@@ -17,7 +20,7 @@
 `-I --info` Displays extra information about SSL certificate
 
 
-## To run for local SSL certificate check:
+### To run for local SSL certificate check:
 ```
 $ python3 test.py -L -f /etc/ssl/certs/ca-certificates.crt
 >>> -------------------------------------------------------------------
@@ -26,12 +29,12 @@ $ python3 test.py -L -f /etc/ssl/certs/ca-certificates.crt
     3945 days left
 ```
 
-## To run for local SSL certificate check with additional information:
+### To run for local SSL certificate check with additional information:
 ```
 $ python3 test.py -L -I -f /etc/ssl/certs/ca-certificates.crt
 ```
 
-## To run for remote SSL certificate check:
+### To run for remote SSL certificate check:
 ```
 $ python3 test.py -R -H 'github.com' -p 443
 >>> Expiry Date :  03/06/2020
@@ -39,7 +42,7 @@ $ python3 test.py -R -H 'github.com' -p 443
     82 days left
 ```
 
-## To run for remote SSL certificate check with additional Information:
+### To run for remote SSL certificate check with additional Information:
 ```
 $ python3 test.py -I -R -H 'github.com' -p 443
 >>> Issued Domain Name : github.com
